@@ -8,9 +8,9 @@ Requires [vagrant](https://www.vagrantup.com/).  Tested on Kubuntu 14.04 with Vi
 Set to Private IP 192.168.200.200. Update VagrantFile to change this
 
 Database is Postgresql using the following settings
-Username: owncloud
-Password: owncloud
-Database: owncloud
+- Username: owncloud
+- Password: owncloud
+- Database: owncloud
 
 See setup_owncloud.sh script to change these.  
 
