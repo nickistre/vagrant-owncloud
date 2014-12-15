@@ -1,0 +1,5 @@
+# KDE Directory setting file
+.directory
+
+# Vagrant directory
+/.vagrant
