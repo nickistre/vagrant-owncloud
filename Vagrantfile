@@ -12,7 +12,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "ubuntu/trusty64"
 
-  config.vm.network "private_network", ip: "192.168.200.200"
+  config.vm.hostname = "owncloud.vagrant.dev"
+  
+  config.vm.network "private_network", type: "dhcp"
+  
+  config.landrush.enabled = true
   
   # copy config files
   config.vm.provision "file", source: "owncloud.conf", destination: "/tmp/owncloud.conf"
