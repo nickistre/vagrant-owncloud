@@ -28,7 +28,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   # copy config files
   config.vm.provision "file", source: "owncloud.conf", destination: "/tmp/owncloud.conf"
-  config.vm.provision "file", source: "owncloud-ssl.conf", destination: "/tmp/owncloud-ssl.conf"
   
   
   config.vm.provision "shell", path: "install_postgresql.sh"
